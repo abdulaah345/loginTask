@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    background-color: #F0F2F5;
+    
+}
+
+h2 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50.4px;
+    text-align: center;
+    color: #65B946;
+    margin-top: 50px;
+}
+
+h2 span {
+    display: block;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 17px;
+    box-shadow: 0px 1px 4px 0px #65B94640;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    /* justify-content: space-around; */
+    width: 500px;
+    height: 440px;
+    position: relative;
+    
+}
+.signin{
+    margin: 20px auto;
+    padding-top: 20px;
+}
+.line{
+    margin-top: -0.9%;
+    text-align: center;
+}
+.login-box img {
+    text-align: center;
+    width: 58px;
+    height: 51px;
+    margin: 0 auto;
+    /* margin-top: 50px;
+    margin-bottom: 20px; */
+}
+
+.login-box img~p {
+    text-align: center;
+    color: #65B946;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30.8px;
+   
+
+}
+
+.login-box input {
+    width: 80%;
+    border-radius: 10px;
+    outline: none;
+    border: 1.5px solid #C7CCD0;
+    background-color: #FFFFFF;
+    padding: 18px 20px 18px 20px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+}
+.login-box input:hover{
+    border: 1.5px solid #65B946;
+}
+
+.login-box button {
+    width: 50%;
+    margin: 0 auto;
+    padding: 16px;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    background: #65B94691;
+    color: white;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+
+}
+
+.circle {
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+    background: #E1ECE2;
+    position: absolute;
+    z-index: -1;
+    left: -50px;
+    bottom: 25px;
+}
+
+.circle2 {
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+    background: #E1ECE2;
+    position: absolute;
+    z-index: -1;
+    right: -50px;
+    top: 25px;
+}
