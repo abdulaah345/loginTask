@@ -2,11 +2,19 @@ let btn = document.getElementsByTagName("button")[0]; // Access the first button
 let emailInput = document.querySelector('input[type="email"]');
 let passInput = document.querySelector('input[type="password"]');
 let errorMessage = document.querySelector('.error');
+let spani = togglePassword.querySelector('i');
+
 function validateInputs() {
     if (emailInput.checkValidity() && passInput.value.length >= 8) {
         errorMessage.style.display = "none";
 
         btn.style.backgroundColor = "#65B946";}
+
+        if (passInput.value === "") {
+            togglePassword.style.display = "none";
+        } else {
+            togglePassword.style.display = "block";
+        }
         btn.onclick=function(){
             btn.style.transform = "scale(0.9)";
             if (emailInput.value!=="admin@gmail.com" || passInput.value!=="123456789") {
