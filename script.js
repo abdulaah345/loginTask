@@ -7,9 +7,9 @@ let spani = togglePassword.querySelector('i');
 function validateInputs() {
     if (emailInput.checkValidity() && passInput.value.length >= 8) {
         errorMessage.style.display = "none";
-
+       
         btn.style.backgroundColor = "#65B946";}
-
+      
         if (passInput.value === "") {
             togglePassword.style.display = "none";
         } else {
@@ -51,3 +51,4 @@ document.getElementById('togglePassword').addEventListener('click', function (e)
     icon.classList.toggle('fa-eye');
     icon.classList.toggle('fa-eye-slash');
 });
+togglePassword.style.display = "none";
