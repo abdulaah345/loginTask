@@ -138,3 +138,14 @@ h2 span {
     margin-top: -5px;
     margin-left: 10%;
 }
+.password-container{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 10%;
+}
+.password-container span{
+    position: absolute;
+    right: 24%;
+    bottom: 52%;
+}

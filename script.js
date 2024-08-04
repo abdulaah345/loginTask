@@ -4,7 +4,7 @@ let passInput = document.querySelector('input[type="password"]');
 let errorMessage = document.querySelector('.error');
 function validateInputs() {
     if (emailInput.checkValidity() && passInput.value.length >= 8) {
-    
+        errorMessage.style.display = "none";
 
         btn.style.backgroundColor = "#65B946";}
         btn.onclick=function(){
@@ -24,7 +24,7 @@ function validateInputs() {
             setTimeout(() => {
                 btn.style.background = ""
                 btn.style.transform = "scale(1)";
-               
+                
             },
              400); // Adjust the delay as needed
         }
@@ -35,3 +35,11 @@ function validateInputs() {
 
 emailInput.addEventListener('input', validateInputs);
 passInput.addEventListener('input', validateInputs);
+document.getElementById('togglePassword').addEventListener('click', function (e) {
+    const passwordField = document.getElementById('password');
+    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordField.setAttribute('type', type);
+    const icon = this.querySelector('i');
+    icon.classList.toggle('fa-eye');
+    icon.classList.toggle('fa-eye-slash');
+});
