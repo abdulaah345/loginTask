@@ -48,8 +48,10 @@ h2 span {
     margin: 20px auto;
     padding-top: 20px;
 }
+
+
 .line{
-    margin-top: -0.9%;
+    margin-top: -0.6%;
     text-align: center;
 }
 .login-box img {
@@ -57,6 +59,7 @@ h2 span {
     width: 58px;
     height: 51px;
     margin: 0 auto;
+    
     /* margin-top: 50px;
     margin-bottom: 20px; */
 }
@@ -67,7 +70,7 @@ h2 span {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 30.8px;
    
@@ -127,4 +130,11 @@ h2 span {
     z-index: -1;
     right: -50px;
     top: 25px;
+}
+.error{
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: -5px;
+    margin-left: 10%;
 }
